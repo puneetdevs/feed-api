@@ -1,0 +1,29 @@
+.reveal {
+    display: block;
+
+    h1 {
+        font-size: rem-calc(20);
+    }
+
+    .button {
+        margin-bottom: 0;
+    }
+}
+
+.open-modal {
+    cursor: pointer;
+}
+
+@include breakpoint(medium) {
+
+    .reveal {
+        @include absolute-center;
+
+        position: fixed;
+
+        h1 {
+            font-size: rem-calc(25);
+        }
+    }
+
+}
